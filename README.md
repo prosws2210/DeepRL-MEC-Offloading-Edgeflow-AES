@@ -70,8 +70,17 @@ The trained agent achieves **99.99% of oracle performance** on unseen test data,
 - **Evaluation**: Each action candidate assessed via bisection algorithm  
 - **Feedback Loop**: Best-performing action becomes training target  
 
-![System Architecture Diagram]  
-*Figure 1: DROO System Architecture - Agent-Environment Interaction Loop*
+### Channel Gain Fluctuation
+![Channel Gain Fluctuation](https://github.com/prosws2210/DeepRL-MEC-Offloading-Edgeflow-AES/blob/main/Others/1.png?raw=true)
+
+### Optimal Offloading Frequency per User
+![Optimal Offloading Frequency](https://github.com/prosws2210/DeepRL-MEC-Offloading-Edgeflow-AES/blob/main/Others/2.png?raw=true)
+
+### Distribution of Optimal Computation Rate (Q*)
+![Result 3](https://github.com/prosws2210/DeepRL-MEC-Offloading-Edgeflow-AES/blob/main/Others/3.png?raw=true)
+
+### Full System Correlation Matrix
+![Result 4](https://github.com/prosws2210/DeepRL-MEC-Offloading-Edgeflow-AES/blob/main/Others/4.png?raw=true)
 
 ---
 
@@ -122,8 +131,8 @@ The core training process follows this **Agent-Environment Interaction Cycle**:
 4. **Action Selection** → Agent chooses the highest-performing decision  
 5. **Learning Update** → (state, action) pair stored in replay memory → periodic DNN training  
 
-![Training Progress Visualization]  
-*Figure 2: Agent Training Progress - Loss Reduction Over Time*
+![Result 5](https://github.com/prosws2210/DeepRL-MEC-Offloading-Edgeflow-AES/blob/main/Others/5.png?raw=true)
+![Result 6](https://github.com/prosws2210/DeepRL-MEC-Offloading-Edgeflow-AES/blob/main/Others/6.png?raw=true)
 
 ---
 
@@ -134,9 +143,6 @@ The core training process follows this **Agent-Environment Interaction Cycle**:
 - **Final Test Performance**: **99.99% of oracle rate**  
 
 The training cost plot shows steady convergence, indicating successful learning of the state-to-action mapping.  
-
-![Performance Comparison Chart]  
-*Figure 3: Normalized Computation Rate - Agent vs Oracle Performance*
 
 ---
 
@@ -184,6 +190,13 @@ Each candidate decision is evaluated using a bisection algorithm that:
 | **Scalability**          | Poor (exponential complexity)     | Excellent (constant time) | Highly scalable          |
 | **Adaptability**         | Static optimization               | Dynamic learning    | Self-improving                |
 | **Memory Usage**         | Minimal                           | 1,024 samples (~8MB)| Reasonable overhead            |
+
+---
+## 🚀 Visualizing the Outputs
+
+![Result 9](https://github.com/prosws2210/DeepRL-MEC-Offloading-Edgeflow-AES/blob/main/Others/9.png?raw=true)
+![Result 10](https://github.com/prosws2210/DeepRL-MEC-Offloading-Edgeflow-AES/blob/main/Others/10.png?raw=true)
+![Result 7](https://github.com/prosws2210/DeepRL-MEC-Offloading-Edgeflow-AES/blob/main/Others/7.png?raw=true)
 
 ---
 
